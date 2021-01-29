@@ -33,9 +33,26 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
+
         <title>Quiz React/Next</title>
+        <meta name="title" content="Quiz React/Next"/>
+        <meta name="description" content=""/>
+
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://quiz-react-next.rdaldegan.vercel.app/"/>
+        <meta property="og:title" content="Quiz React/Next"/>
+        <meta property="og:description" content=""/>
         <meta property="og:image" content={db.bg}/>
+
+        <meta property="twitter:card" content="summary_large_image"/>
+        <meta property="twitter:url" content="https://quiz-react-next.rdaldegan.vercel.app/"/>
+        <meta property="twitter:title" content="Quiz React/Next"/>
+        <meta property="twitter:description" content=""/>
+        <meta property="twitter:image" content={db.bg}/>
+  
+
       </Head>
+
       <ThemeProvider theme={theme}>
         <GlobalStyle />
         <Component {...pageProps} />
